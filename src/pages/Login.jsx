@@ -1,5 +1,5 @@
 import LoginButton from '../components/LoginButton';
-import LoginInput from '../components/LoginInput'
+import InputComponent from '../components/InputComponent'
 import LoginPicture from '../components/LoginPicture';
 
 function Login() {
@@ -9,16 +9,16 @@ function Login() {
                 image = "assets/images/login_background.png"
                 alt = "Image de fond"
             />
-            <div>
+            <div className='login__box'>
                 <h1>Log In</h1>
-                <LoginInput 
+                <InputComponent
                     label ="Adresse e-mail"
                     name = "email"
                     required = {true}
                     type = "text"
                     placeholder = "Ecrivez ici"
                 />
-                <LoginInput 
+                <InputComponent
                     label ="Mot de passe"
                     name = "email"
                     required = {true}

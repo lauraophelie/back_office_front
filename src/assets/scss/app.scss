@@ -1,0 +1,14 @@
+input{
+    //display: flex;
+    //width: max-content;
+    &__input{
+        border: solid white 1px;
+    }
+    &__label{
+        border: solid white 1px;
+    }
+}
+
+button{
+    border: none;
+}
