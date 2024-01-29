@@ -4,6 +4,8 @@ import InputComponent from "./InputComponent";
 import Select from "./Select";
 import AdminBox from "./AdminBox";
 
+import '../assets/scss/app.scss'
+
 function ContentAjoutModele(){
     return(
         <div className="content">

@@ -2,7 +2,6 @@
 import './App.scss'
 import AjoutModel from './pages/AjoutModele';
 
-import Login from './pages/Login';
 
 function App() {
   return (

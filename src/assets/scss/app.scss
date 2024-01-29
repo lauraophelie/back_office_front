@@ -1,14 +1,6 @@
-input{
-    //display: flex;
-    //width: max-content;
-    &__input{
-        border: solid white 1px;
-    }
-    &__label{
-        border: solid white 1px;
-    }
-}
-
-button{
+.button {
+    &__second{
     border: none;
+    background-color: red;
+    }
 }
