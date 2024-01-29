@@ -1,3 +1,21 @@
+.navbar{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    width: max-content;
+    &_button{
+        height: 40px;
+        font-size: 14px;
+        text-align: left;
+        &_logout{
+            height: 40px;
+            font-size: 14px;
+            text-align: left;
+            color: rgb(50, 76, 224);
+        }
+    }
+}
+
 input{
     //display: flex;
     //width: max-content;
@@ -7,8 +25,4 @@ input{
     &__label{
         border: solid white 1px;
     }
-}
-
-button{
-    border: none;
 }

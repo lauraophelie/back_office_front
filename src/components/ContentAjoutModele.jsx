@@ -2,10 +2,18 @@ import Button from "../components/Button";
 import CheckBoxMultichoice from "./CheckBoxMultichoice";
 import InputComponent from "./InputComponent";
 import Select from "./Select";
+import AdminBox from "./AdminBox";
+
+import '../assets/scss/app.scss'
 
 function ContentAjoutModele(){
     return(
         <div className="content">
+            <AdminBox
+                name = "NomAdmin"
+                mail = "mail@Admin"
+                image = "assets/profil/profil_1"
+            />
             <div className="content__inline">
                 <InputComponent
                     label ="Nom du modèle"
