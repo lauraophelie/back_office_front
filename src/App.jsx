@@ -10,6 +10,13 @@ function App() {
       <Routes>
           <Route path="/" element={<Login/>} />
           <Route path="/ajoutModel" element={<AjoutModel />} />
+          <Route path="/listeModele" element={<ListModel />} />
+          <Route path="/detailsModele" element={<DetailsModel/>} />
+          <Route path="/listeMarque" element={<></>} />
+          <Route path="/listeAnnonces" element={<></>} />
+          <Route path="/detailsAnnonce" element={<></>} />
+          <Route path="/ajoutMarque" element={<></>} />
+          <Route path="/logout" element={<></>} />
       </Routes>
       </Router>
     </>
