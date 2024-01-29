@@ -1,6 +1,8 @@
 import Input from "./Input"
 import Label from "./Label"
 
+import "../assets/scss/login.scss"
+
 function InputComponent(props){
     const { label, required, name, value, type, onChange, placeholder} = props
     
@@ -9,6 +11,7 @@ function InputComponent(props){
             <Label
                 label = {label}
                 name = {name}
+                className = "input__label"
             />
             <Input
                 required = {required}
@@ -17,6 +20,7 @@ function InputComponent(props){
                 placeholder = {placeholder}
                 onChange = {onChange}
                 type = {type}
+                className = "input__input"
             />
         </div>
     )
