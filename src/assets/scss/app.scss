@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Lato Regular';
+    src: url('../font/Lato-Regular.ttf');
+}
+
+*{
+    font-family: 'Lato Regular';
+}
+
 .navbar{
     display: flex;
     flex-direction: column;
