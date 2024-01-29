@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom'
+
 import Button from './Button'
 
 import '../assets/scss/app.scss'
@@ -5,13 +7,13 @@ import '../assets/scss/app.scss'
 function NavBar(){
     return(
         <div className="navbar">
-            <Button  text='Statistique' icon ='' className = 'navbar_button'/>
-            <Button  text='Marque' icon ='' className = 'navbar_button'/>
-            <Button  text='Modèle' icon ='' className = 'navbar_button'/>
-            <Button  text='Type de vitesse' icon ='' className = 'navbar_button'/>
-            <Button  text="Type d'energie" icon ='' className = 'navbar_button'/>
-            <Button  text='Annonces' icon ='' className = 'navbar_button'/>
-            <Button  text='Se déconnecter' icon ='' className = 'navbar__button__logout'/>
+            <Link to="/statistique">  <Button  text='Statistique' icon ='' className = 'navbar_button'/> </Link>
+            <Link to="/listeMarque">  <Button  text='Marque' icon ='' className = 'navbar_button'/> </Link>
+            <Link to="/listeModele">  <Button  text='Modèle' icon ='' className = 'navbar_button'/> </Link>
+            <Link to="/typeVitesse">  <Button  text='Type de vitesse' icon ='' className = 'navbar_button'/> </Link>
+            <Link to="/typeEnergie">  <Button  text="Type d'energie" icon ='' className = 'navbar_button'/> </Link>
+            <Link to="/listeAnnonces">  <Button  text='Annonces' icon ='' className = 'navbar_button'/> </Link>
+            <Link to="/logout">  <Button  text='Se déconnecter' icon ='' className = 'navbar_button_logout'/> </Link>
         </div>
     )
 }

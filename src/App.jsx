@@ -1,12 +1,17 @@
-//import {  BrowserRouter, Route, Routes } from 'react-router-dom';
+import {  BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // './App.scss'
 import AjoutModel from './pages/AjoutModele';
-
+import Login from './pages/Login';
 
 function App() {
   return (
     <>
-      <AjoutModel/>
+      <Router>
+      <Routes>
+          <Route path="/" element={<Login/>} />
+          <Route path="/ajoutModel" element={<AjoutModel />} />
+      </Routes>
+      </Router>
     </>
   )
 }
