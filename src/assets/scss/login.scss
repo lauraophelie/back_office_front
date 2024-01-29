@@ -1,4 +1,35 @@
+*{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .login{
-    color: red;
-    border-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    &__picture{
+        width: 50%;
+    }
+    &__box{
+        border: 1px solid white;
+        width: 50%;
+        background-color: rgb(120, 121, 121);
+    }
+    &__content{
+        width: max-content;
+        background-color: white;
+    }
+}
+
+.input{
+    &__component{
+        display: flex;
+        flex-direction: column;
+    }
+    &__input{
+        width: max-content;
+        height: 30px;
+    }
+    &__label{
+        font-size: 19;
+    }
 }

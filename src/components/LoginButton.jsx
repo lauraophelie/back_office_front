@@ -1,3 +1,4 @@
+import "../assets/scss/login.scss"
 import Button from "./Button"
 
 function LoginButton(props){
