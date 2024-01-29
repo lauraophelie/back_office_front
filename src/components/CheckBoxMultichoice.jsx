@@ -1,4 +1,5 @@
 import CheckBox from "./CheckBox";
+import Label from "./Label";
 
 function CheckBoxMultichoice(props){
     const { label, name } = props
