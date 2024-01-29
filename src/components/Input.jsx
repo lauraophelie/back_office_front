@@ -1,9 +1,9 @@
 function Input(props){
-    const { required, name, value, type, onChange, placeholder} = props
+    const { required, name, value, type, onChange, placeholder, className} = props
     return(
         <>
             <input 
-                className="input__input"
+                className = {className}
                 name = {name}
                 type = {type}
                 value = {value}

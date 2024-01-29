@@ -1,6 +1,6 @@
 function LoginPicture(props){
     return (
-    <div className="login__picture">
+    <div className={props.className}>
         <img 
             src = {props.image} 
             alt = {props.alt} 
