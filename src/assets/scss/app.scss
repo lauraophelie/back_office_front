@@ -1,6 +1,23 @@
-.button {
-    &__second{
-    border: none;
-    background-color: red;
+.navbar{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    width: max-content;
+    text-align: right;
+
+    &__button{
+        height: 40px;
+        font-size: 17px;
+    }
+}
+
+input{
+    //display: flex;
+    //width: max-content;
+    &__input{
+        border: solid white 1px;
+    }
+    &__label{
+        border: solid white 1px;
     }
 }

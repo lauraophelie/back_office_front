@@ -1,5 +1,5 @@
 //import {  BrowserRouter, Route, Routes } from 'react-router-dom';
-import './App.scss'
+// './App.scss'
 import AjoutModel from './pages/AjoutModele';
 
 
