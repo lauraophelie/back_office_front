@@ -1,11 +1,12 @@
+import { Button } from "@mui/material"
+
 function LoginButton(props){
     const {text} = props
     return(
-        <>
-            <button className = 'button__login'>
-                {text}
-            </button>
-        </>
+        <Button
+            text = {text}
+            className = "button__login"
+        />
     )
 }
 
