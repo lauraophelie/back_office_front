@@ -11,3 +11,5 @@ function NavButton(props){
         />
     )
 }
+
+export default NavButton
