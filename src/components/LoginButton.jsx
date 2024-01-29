@@ -1,13 +1,13 @@
 import "../assets/scss/login.scss"
+import Button from "./Button"
 
 function LoginButton(props){
     const {text} = props
     return(
-        <>
-            <button className = 'button__login'>
-                {text}
-            </button>
-        </>
+        <Button
+            text = {text}
+            className = "button__login"
+        />
     )
 }
 
