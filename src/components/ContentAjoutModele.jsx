@@ -1,4 +1,4 @@
-import { Button } from "@mui/base";
+import Button from "../components/Button";
 import CheckBoxMultichoice from "./CheckBoxMultichoice";
 import InputComponent from "./InputComponent";
 import Select from "./Select";

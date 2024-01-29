@@ -1,9 +1,13 @@
+import Button from "./Button"
+
 function NavButton(props){
     const { text , icon } = props
     
     return(
-        <button className="button__nav">
-            {icon} {text}
-        </button>
+        <Button 
+            className="button__nav"
+            text = {text}
+            icon = {icon}
+        />
     )
 }
