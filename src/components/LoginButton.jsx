@@ -1,3 +1,5 @@
+import "../assets/scss/login.scss"
+
 function LoginButton(props){
     const {text} = props
     return(
