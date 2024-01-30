@@ -1,7 +1,11 @@
+import ContentListeModele from '../components/ContentListeModele';
+import NavBar from '../components/NavBar';
+
 function ListeModele(){
     return(
         <>
-            ListeModele
+            <NavBar/>
+            <ContentListeModele/>
         </>
     )
 }
