@@ -9,18 +9,18 @@ function TableModele(){
     ]
     return(
         <table className="table__modele">
-            
-        {data.map((item) => (
-            <RowListeModele
-                className = "row__modele"
-                modeleClassName = "text__colored"
-                linkClassName = "link__text"
-                link ="/DetailsModele"
-                id = {item.id}
-                marque = {item.marque}
-                modele = {item.modele}
-            />
-        ))}
+            <ColumnListeModele/>
+            {data.map((item) => (
+                <RowListeModele
+                    className = "row__modele"
+                    modeleClassName = "text__colored"
+                    linkClassName = "link__text"
+                    link ="/DetailsModele"
+                    id = {item.id}
+                    marque = {item.marque}
+                    modele = {item.modele}
+                />
+            ))}
         </table>
     )
 }
