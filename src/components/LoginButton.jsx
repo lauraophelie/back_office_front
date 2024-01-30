@@ -6,7 +6,7 @@ function LoginButton(props){
     return(
         <Button
             text = {text}
-            className = "button__login"
+            className = "login__button"
         />
     )
 }
