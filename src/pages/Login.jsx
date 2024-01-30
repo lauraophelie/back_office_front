@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 
 import axios from 'axios';
 
-import {usehistory} from'react-router-dom';
+import {useNavigate} from'react-router-dom';
 import { SessionContext } from './SessionContext';
 
 import LoginButton from '../components/LoginButton';
@@ -23,7 +23,7 @@ function Login() {
         setEmail(event.target.value);
        };
 
-    const history = usehistory();
+    const navigate = useNavigate();
 
     const handleSubmit = (event) => {
         const { setSession } = useContext(SessionContext);
@@ -44,8 +44,8 @@ function Login() {
         };
 
         setSession(userSession);
-        
-        history.push('/ListeModele')
+
+        navigate('/ListeModele')
        })
        .catch((error) => {
         console.error(error);
