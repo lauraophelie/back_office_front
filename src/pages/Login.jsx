@@ -40,6 +40,7 @@ function Login() {
         const userSession = {
             id: response.data.id,
             username: response.data.nom,
+            email: email,
             token: response.data.token
         };
 
