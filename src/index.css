@@ -1,4 +1,4 @@
-/*:root {
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -34,7 +34,135 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+*/
 
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#root>.login{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+#root>.login>.login__picture>img{
+  width: 100%;
+}
+
+#root>.login>.login__picture{
+  overflow: hidden;
+  height: 100%;
+}
+#root>.login>.login__box{
+  display: grid;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+#root>.login>.login__box>.login__container{
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr 3fr;
+  justify-content: center;
+  width: 345px;
+  align-items: center;
+}
+#root>.login>.login__box>.login__container>h1{
+  text-align: center;
+}
+#root>.login>.login__box>.login__container>.input__component{
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+  width: 345px;
+  align-items: end;
+}
+#root>.login>.login__box>.login__container>.input__component>input{
+  height: 50px;
+  background: #F9F9F9;
+  color: #C8C8C8;
+  border: none;
+  border-radius: 5px;
+  padding-left: 30px;
+}
+#root>.login>.login__box>.login__container>button{
+  width: 345px;
+  height: 50px;
+  border-radius: 5px;
+  background: #2F76C2;
+  color: #F9F9F9;
+  border: none;
+  font-size: 16px;
+}
+
+/* ------------------------NAVBAR -------------------------- */
+
+.app__container{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.app__container>.navbar{
+  background: none;
+  display: grid;
+  align-items: center;
+  width: 100%;
+  padding-left: 20%;
+}
+.app__container>.navbar .navbar_button_logout{
+  position: absolute;
+  text-align: center;
+}
+.app__container>.navbar>.navlink{
+  background: none;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+
+.app__container>.navbar>.navlink .navbar_button{
+  background: none;
+  border: none;
+  color: #3B475C;
+  cursor: pointer;
+  width: 70%;
+  padding-left: 10px;
+}
+.app__container>.navbar>.navlink .navbar_button:hover{
+  background: #ededed;
+}
+
+
+/* -------------------- CONTAINER ---------------------*/
+.admin__box{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.admin__box>.admin__image{
+  position: absolute;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -70,4 +198,5 @@ button:focus-visible {
 .login__input{
   color: red;
   border-color: aquamarine;
-}*/
+}
+*/
