@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Lato Regular";
+  src: url("../font/Lato-Regular.ttf");
+}
+* {
+  font-family: "Lato Regular";
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.navbar_button {
+  height: 40px;
+  font-size: 14px;
+  text-align: left;
+}
+.navbar_button_logout {
+  height: 40px;
+  font-size: 14px;
+  text-align: left;
+  color: rgb(50, 76, 224);
+}/*# sourceMappingURL=app.css.map */
