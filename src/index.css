@@ -149,73 +149,8 @@ h1 {
   height: 100%;
 }
 
-/* ------------------- Content ------------------- */
 
 
-.content{
-  background: #F9F9F9;
-}
-
-/* ------------------- Choix ------------------- */
-
-.input__select__select,.input__input{
-  width: 200px;
-  height: 40px;
-  border: none;
-  background: #ffffff;
-
-}
-
-.input__component,.input__select__box{
-  display: grid;
-  justify-content: end;
-}
-
-.content__inline{
-  display: flex;
-}
-
-
-/* ----------------- Ajout Marque -------------------- */
-body{
-  height: 100%;
-  background: #F9F9F9;
-}
-.app__container{
-  height: 100%;
-}
-
-.add__marque__container{
-  width: fit-content;
-}
-
-.add__box{
-  background: none;
-  padding-top: 30px;
-}
-.add__box>.add__btn{
-  background: #2F76C2;
-  color: #ffffff;
-  width: 324px;
-  height: 50px;
-  border: none;
-  margin-left: auto;
-  margin-right: auto;
-}
-.add__box>h2{
-  font-size: 26px;
-  font-weight: 400;
-  color: #3B475C;
-}
-.add__box>.form__add{
-  display: grid;
-  grid-template-rows: 1fr 2fr;
-}
-.add__box>.form__add>input{
-  width: 475px;
-  height: 50px;
-  padding-left: 20px;
-}
 
 
 
