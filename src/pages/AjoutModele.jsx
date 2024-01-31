@@ -4,10 +4,8 @@ import NavBar from "../components/NavBar";
 function AjoutModel(){
     return(
         <body>
-            <div className="app__container">
-                <NavBar/>
-                <ContentAjoutModele/>
-            </div>
+            <NavBar/>
+            <ContentAjoutModele/>
         </body>
     )
 }
