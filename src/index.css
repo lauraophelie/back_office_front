@@ -193,12 +193,11 @@ body{
 .add__box>.add__btn{
   background: #2F76C2;
   color: #ffffff;
-  width: 100%;
+  width: 324px;
   height: 50px;
   border: none;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
 }
 .add__box>h2{
   font-size: 26px;
