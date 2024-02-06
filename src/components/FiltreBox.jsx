@@ -1,8 +1,8 @@
 function FiltreBox(props){
     return(
         <div className={props.className}>
-            {props.text} {props.icon}
+            {props.text} <i className={props.icon}></i>
         </div>
     )
 }
-export default FiltreBox
+export default FiltreBox;

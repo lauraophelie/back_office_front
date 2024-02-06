@@ -2,8 +2,9 @@ import React, { useState, useContext } from 'react';
 
 import axios from 'axios';
 
+import Cookies from 'js-cookie';
+
 import {useNavigate} from'react-router-dom';
-import { SessionContext } from './SessionContext';
 
 import LoginButton from '../components/LoginButton';
 import InputComponent from '../components/InputComponent'
@@ -26,10 +27,7 @@ function Login() {
     const navigate = useNavigate();
 
     const handleSubmit = (event) => {
-        const { setSession } = useContext(SessionContext);
-
         event.preventDefault();
-        // Ici, vous pouvez envoyer les données du formulaire à votre serveur
         console.log(`Password: ${password}, Email: ${email}`);
         axios.post('https://voiturebackendrelationnel-production.up.railway.app/rest/auth/login', {
         email: {email},
@@ -37,15 +35,11 @@ function Login() {
        })
        .then((response) => {
         console.log(response.data);
-        const userSession = {
-            id: response.data.id,
-            username: response.data.nom,
-            email: email,
-            token: response.data.token
-        };
 
-        setSession(userSession);
-
+        Cookies.set('userid', response.data.id);
+        Cookies.set('username', response.data.nom);
+        Cookies.set('email', email);
+        Cookies.set('token', response.data.token);
         navigate('/ListeModele')
        })
        .catch((error) => {

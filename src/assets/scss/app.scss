@@ -3,8 +3,20 @@
     src: url('../font/Lato-Regular.ttf');
 }
 
+$color_blue:#2F76C2;
+
 *{
     font-family: 'Lato Regular';
+}
+
+.body{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+
+.contenu{
+    display: flex;
 }
 
 .navbar{
@@ -12,15 +24,37 @@
     flex-direction: column;
     margin-left: 0px;
     width: max-content;
-    &_button{
-        height: 40px;
-        font-size: 14px;
-        text-align: left;
-        &_logout{
-            height: 40px;
-            font-size: 14px;
+    border: solid black 1px;
+
+    &_principal{
+        margin-top:150px;
+        display: flex;
+        flex-direction: column;
+        &_button{
+            padding-left: 50px;
             text-align: left;
-            color: rgb(50, 76, 224);
+            width: 300px;
+            height: 40px;
+            background-color: white;
+            border: none;
         }
+    }
+
+    &_second{
+        margin-top: 100px;
+        &_button{
+            color: $color_blue;
+            padding-left: 50px;
+            text-align: left;
+            width: 300px;
+            height: 40px;
+            background-color: white;
+            border: none;
+        }
+    }
+
+    &_icon{
+        width: 20px;
+        padding-right: 20px;
     }
 }

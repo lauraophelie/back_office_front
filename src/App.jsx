@@ -16,7 +16,7 @@ function App() {
       <Router>
       <Routes>
           <Route path="/" element={<Login/>} />
-          <Route path="/ajoutModel" element={<AjoutModel />} />
+          <Route path="/ajoutModele" element={<AjoutModel />} />
           <Route path="/listeModele" element={<ListeModele />} />
           <Route path="/detailsModele" element={<DetailsModele/>} />
           <Route path="/listeMarque" element={<ListeMarque/>} />

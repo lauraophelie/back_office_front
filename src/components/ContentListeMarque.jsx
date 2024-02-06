@@ -4,7 +4,7 @@ import Button from './Button'
 import FiltreBox from './FiltreBox'
 import TableModele from './TableModele'
 
-function ContentListeModele(props){
+function ContentListeMarque(props){
     const {data} = props
 
     return(
@@ -31,11 +31,11 @@ function ContentListeModele(props){
                     text="Ajouter un modèle"
                 />
             </div>
-            <TableModele
+            <TableMarque
                 data = {data}
             />
         </div>
     )
 }
 
-export default ContentListeModele
+export default ContentListeMarque

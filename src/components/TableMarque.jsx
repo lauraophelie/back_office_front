@@ -1,7 +1,7 @@
 import ColumnListeModele from "./ColumnListeModele"
 import RowListeModele from "./RowListeModele"
 
-function TableModele(props){
+function TableMarque(props){
     const {data} = props
     return(
         <table className="table__modele">
@@ -11,7 +11,7 @@ function TableModele(props){
                     className = "row__modele"
                     modeleClassName = "text__colored"
                     linkClassName = "link__text"
-                    link ="/DetailsModele"
+                    link ="/DetailsMarque"
                     id = {item.id}
                     marque = {item.marque}
                     modele = {item.modele}
@@ -21,4 +21,4 @@ function TableModele(props){
     )
 }
 
-export default TableModele
+export default TableMarque

@@ -1,9 +1,9 @@
 function Button(props){
-    const {text, icon, className} = props
+    const {text, icon, className, imgClassName} = props
     return(
         <>
             <button className = {className}>
-                {text} {icon}
+                <img src = {icon} className = {imgClassName}/><span> {text} </span>
             </button>
         </>
     )
