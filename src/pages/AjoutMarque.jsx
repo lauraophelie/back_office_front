@@ -1,10 +1,12 @@
-import '../assets/scss/app.scss'
+import NavBar from "../components/NavBar";
+import ContentAjoutMarque from "../components/ContentAjoutMarque"
 
 function AjoutMarque(){
     return(
-        < div className="container">
-            AjoutMarque
-        </ div>
+        <>
+            <NavBar/>
+            <ContentAjoutMarque/>
+        </>
     )
 }
 
