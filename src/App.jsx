@@ -3,6 +3,7 @@ import AjoutMarque from './pages/AjoutMarque';
 // './App.scss'
 import AjoutModel from './pages/AjoutModele';
 import DetailsAnnonce from './pages/DetailsAnnonce';
+import DetailsMarque from './pages/DetailsMarque';
 import DetailsModele from './pages/DetailsModele';
 import ListeAnnonce from './pages/ListeAnnonce';
 import ListeMarque from './pages/ListeMarque';
@@ -19,6 +20,7 @@ function App() {
           <Route path="/ajoutModele" element={<AjoutModel />} />
           <Route path="/listeModele" element={<ListeModele />} />
           <Route path="/detailsModele" element={<DetailsModele/>} />
+          <Route path="/detailsMarque" element={<DetailsMarque/>} />
           <Route path="/listeMarque" element={<ListeMarque/>} />
           <Route path="/listeAnnonces" element={<ListeAnnonce/>} />
           <Route path="/detailsAnnonce" element={<DetailsAnnonce/>} />

@@ -2,16 +2,12 @@ import CheckBox from "./CheckBox";
 import Label from "./Label";
 
 function CheckBoxMultichoice(props){
-    const { label, name } = props
-    const data = [
-        { id: 1, name: 'Option 1' },
-        { id: 2, name: 'Option 2' },
-        { id: 3, name: 'Option 3' }
-     ];
+    const { label, name, data } = props
     
      return (
-        <>
+        <div className="content__input__checkbox">
             <Label 
+                className = "content__label"
                 label= {label}
                 name = {name}
             />
@@ -24,7 +20,7 @@ function CheckBoxMultichoice(props){
                 />
             ))}
             </div>
-        </>
+        </div>
      );
 }
 

@@ -1,23 +1,19 @@
-import Label from './Label'
+import Label from "./Label";
 
 function Select(props){
-  const { name, label } = props 
-  const data = [
-    { id: 1, name: 'Option 1' },
-    { id: 2, name: 'Option 2' },
-    { id: 3, name: 'Option 3' }
-  ];
+  const { className, labelClassName ,selectClassName , optionClassName, name, label, data } = props 
     
   return (
-    <div className='input__select__box'>
-      <Label 
-        label = {label}
-        name = {name}
-      />
-      <select name={ name } className='input__select__select'>
-        <option> { props.default } </option>
+    <div className={className}>
+      <Label
+                className = {labelClassName}
+                label = {label}
+                name = {name}
+            />
+      <select name={ name } className={selectClassName}>
+        <option className={optionClassName}> { props.default } </option>
         {data.map((item) => (
-          <option key={item.id} value={item.id} className='input__select__option'>
+          <option key={item.id} value={item.id} >
             {item.name}
           </option>
         ))}
