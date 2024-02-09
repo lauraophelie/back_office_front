@@ -152,7 +152,24 @@ $black: #2B2E33;
     }
 
     &__details{
-        
+        font-family: "Noto Sans";
+        font-size: 18px;
+        color: #C8C8C8;
+    }
+
+    &__modeles{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+
+        &__bloc{
+            width: 200px;
+            height: 60px;
+            align-items: center;
+            font-family: 'Lato';
+            font-size: 14px;
+            color: #2F76C2;
+        }
     }
 }
 
