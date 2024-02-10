@@ -30,8 +30,7 @@ function Login() {
         event.preventDefault();
         console.log(`Password: ${password}, Email: ${email}`);
         axios.post('https://voiturebackendrelationnel-production.up.railway.app/rest/auth/login', {
-        email: {email},
-        password:  {password}
+        email,password
        })
        .then((response) => {
         console.log(response.data);
@@ -76,8 +75,8 @@ function Login() {
                         value = {password}
                         placeholder = "Ecrivez ici"
                     />
-                    <LoginButton 
-                        text = "Se connecter"
+                    <input className="login__button" type="submit" 
+                        value = "Se connecter"
                     />
                     </form>
                 </div>

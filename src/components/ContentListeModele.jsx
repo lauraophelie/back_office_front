@@ -18,12 +18,12 @@ function ContentListeModele(props){
             <div className='filter__boxes'>
                 <FiltreBox
                     text = "Recherche par nom"
-                    icon = "fa fa-search"
+                    icon = ""
                     className = "box_filter"
                 />
                 <FiltreBox
                     text = "Filtrer par marque"
-                    icon = "fa fa-dropdown"
+                    icon = ""
                     className = "box_filter"
                 />
                 <Button 

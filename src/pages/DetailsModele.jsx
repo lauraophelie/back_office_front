@@ -1,10 +1,12 @@
-import '../assets/scss/app.scss'
+import NavBar from '../components/NavBar'
+import ContentDetailsModele from '../components/ContentDetailsModele'
 
 function DetailsModele(){
     return(
-        < div className="container">
-            DetailsMarque
-        </div>
+        <>
+            <NavBar/>
+            <ContentDetailsModele/>
+        </>
     )
 }
 export default DetailsModele
