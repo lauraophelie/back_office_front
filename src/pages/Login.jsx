@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 
 import axios from 'axios';
 
@@ -6,7 +6,6 @@ import Cookies from 'js-cookie';
 
 import {useNavigate} from'react-router-dom';
 
-import LoginButton from '../components/LoginButton';
 import InputComponent from '../components/InputComponent'
 import LoginPicture from '../components/LoginPicture';
 
@@ -35,8 +34,6 @@ function Login() {
        .then((response) => {
         console.log(response.data);
 
-        Cookies.set('userid', response.data.id);
-        Cookies.set('username', response.data.nom);
         Cookies.set('email', email);
         Cookies.set('token', response.data.token);
         navigate('/ListeModele')

@@ -1,16 +1,17 @@
 import Cookies from 'js-cookie';
 
 function Logout(){
-    user = Cookies.get("user");
+    token = Cookies.get("token");
 
-    axios.post('https://voiturebackendrelationnel-production.up.railway.app/rest/auth/logout', {
-        email: { email },
-        token:  { token}
-       })
+    const config = {
+        headers: {
+          'Authorization': `Bearer ${token}`
+        }
+      };
+
+    axios.post('https://voiturebackendrelationnel-production.up.railway.app/rest/auth/logout', config)
        .then((response) => {
         console.log(response.data);
-        Cookies.remove('userid');
-        Cookies.remove('username');
         Cookies.remove('email');
         Cookies.remove('token');
         navigate('/Login');

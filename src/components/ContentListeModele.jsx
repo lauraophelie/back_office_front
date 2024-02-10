@@ -3,18 +3,24 @@ import AdminBox from './AdminBox'
 import Button from './Button'
 import FiltreBox from './FiltreBox'
 import TableModele from './TableModele'
+import Title from './Title'
 
 function ContentListeModele(props){
     const {data} = props
 
     return(
         <div className="content">
-            <h1>Liste des modèles</h1>
-            <AdminBox
-                name = "Nom admin"
-                mail = "mail admin"
-                image = "assets/profil/profil_1"
-            />
+            <div className='content__inline'>
+                <Title
+                    className = "content__title"
+                    title = "Liste des modèles"
+                />
+                <AdminBox
+                    name = "NomAdmin"
+                    mail = "mail@Admin"
+                    image = "assets/profil/profil_1.png"
+                />
+            </div>
             <div className='filter__boxes'>
                 <FiltreBox
                     text = "Recherche par nom"
