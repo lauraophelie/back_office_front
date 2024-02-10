@@ -29,7 +29,7 @@ function AjoutModel(){
         { id: 3, name: 'BV 3' }
       ];
     return(
-        < div className="body">
+        < div className="container">
             <NavBar/>
             <ContentAjoutModele
                 listeMarque = {marques}

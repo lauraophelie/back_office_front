@@ -3,10 +3,10 @@ import ContentAjoutMarque from "../components/ContentAjoutMarque"
 
 function AjoutMarque(){
     return(
-        <>
+        <div className="container">
             <NavBar/>
             <ContentAjoutMarque/>
-        </>
+        </div>
     )
 }
 

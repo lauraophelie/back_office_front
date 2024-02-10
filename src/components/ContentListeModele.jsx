@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import '../assets/scss/app.scss'
 import AdminBox from './AdminBox'
 import Button from './Button'
@@ -22,20 +23,29 @@ function ContentListeModele(props){
                 />
             </div>
             <div className='filter__boxes'>
-                <FiltreBox
+                {/* <FiltreBox
                     text = "Recherche par nom"
                     icon = ""
                     className = "box_filter"
-                />
-                <FiltreBox
+                /> */}
+                <div className="box_filter">
+                    <input type="text" placeholder='Recherche par nom'/>
+                    <img src="assets/icons/Icon-search.png" alt="searchbtn" className="searchicon" />
+                </div>
+                <div className="box_filter">
+                    <input type="text" placeholder='Recherche par marque'/>
+                    <i>Search icon</i>
+                </div>
+                {/* <FiltreBox
                     text = "Filtrer par marque"
                     icon = ""
                     className = "box_filter"
-                />
+                /> */}
+                <Link to="/ajoutModele">
                 <Button 
                     className="button__add"
                     text="Ajouter un modèle"
-                />
+                /></Link>
             </div>
             <TableModele
                 data = {data}

@@ -71,3 +71,21 @@ button:focus-visible {
   color: red;
   border-color: aquamarine;
 }*/
+
+.filter__boxes{
+  display: grid;
+  grid-template-columns: 35% 35% 30%;
+}
+.filter__boxes>.box_filter{
+  width: max-content;
+  border-bottom: solid #3F5D8F 2px;
+}
+.filter__boxes>.box_filter>input{
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  background: none;
+}
+.filter__boxes>.box_filter>img{
+  width: 20px;
+}

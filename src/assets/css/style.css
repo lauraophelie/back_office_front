@@ -1,0 +1,4 @@
+.filter__boxes{
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+}
