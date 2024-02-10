@@ -6,8 +6,10 @@ function AdminBox(props){
             <div className="admin__image">
                 <img src={image} alt="Image profil" />
             </div>
-            <div className="admin__name">{ name }</div>
-            <div className="admin__mail">{ mail }</div>
+            <div className="admin__id">
+                <div className="admin__name">{ name }</div>
+                <div className="admin__mail">{ mail }</div>
+            </div>
         </div>
     )
 }

@@ -1,11 +1,11 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 
 import axios from 'axios';
 
-import {useNavigate} from'react-router-dom';
-import { SessionContext } from './SessionContext';
+import Cookies from 'js-cookie';
 
-import LoginButton from '../components/LoginButton';
+import {useNavigate} from'react-router-dom';
+
 import InputComponent from '../components/InputComponent'
 import LoginPicture from '../components/LoginPicture';
 
@@ -26,26 +26,16 @@ function Login() {
     const navigate = useNavigate();
 
     const handleSubmit = (event) => {
-        const { setSession } = useContext(SessionContext);
-
         event.preventDefault();
-        // Ici, vous pouvez envoyer les données du formulaire à votre serveur
         console.log(`Password: ${password}, Email: ${email}`);
         axios.post('https://voiturebackendrelationnel-production.up.railway.app/rest/auth/login', {
-        email: {email},
-        password:  {password}
+        email,password
        })
        .then((response) => {
         console.log(response.data);
-        const userSession = {
-            id: response.data.id,
-            username: response.data.nom,
-            email: email,
-            token: response.data.token
-        };
 
-        setSession(userSession);
-
+        Cookies.set('email', email);
+        Cookies.set('token', response.data.token);
         navigate('/ListeModele')
        })
        .catch((error) => {
@@ -82,8 +72,8 @@ function Login() {
                         value = {password}
                         placeholder = "Ecrivez ici"
                     />
-                    <LoginButton 
-                        text = "Se connecter"
+                    <input className="login__button" type="submit" 
+                        value = "Se connecter"
                     />
                     </form>
                 </div>

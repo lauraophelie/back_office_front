@@ -71,3 +71,58 @@ button:focus-visible {
   color: red;
   border-color: aquamarine;
 }*/
+
+.filter__boxes{
+  display: grid;
+  grid-template-columns: 35% 35% 30%;
+  align-items: center;
+}
+.filter__boxes>.box_filter{
+  width: max-content;
+  border-bottom: solid #3F5D8F 2px;
+  display: flex;
+  padding-bottom: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.filter__boxes>.box_filter>input{
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  background: none;
+}
+.filter__boxes>.box_filter>img{
+  width: 20px;
+}
+
+.filter__boxes>a{
+  text-decoration: none;
+  text-decoration-line: none;
+}
+.filter__boxes>a>.button__add>span{
+  background: #3f5d8f;
+  color: #ffffff;
+  padding: 20px 40px;
+}
+
+.table__modele{
+  margin-top: 50px;
+  width: 100%;
+  table-layout: fixed;
+  gap: 20px 0;
+}
+.table__modele>tr>th{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.table__modele>.row__modele>td{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.table__modele>.row__modele{
+  background: #ffffff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

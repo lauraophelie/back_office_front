@@ -3,24 +3,225 @@
     src: url('../font/Lato-Regular.ttf');
 }
 
+$color_blue:#2F76C2;
+$background: #F9F9F9;
+$label_content_color: #3F5D8F;
+$input_content_color: #C8C8C8;
+$black: #2B2E33;
+
 *{
     font-family: 'Lato Regular';
 }
 
+.contenu{
+    display: flex;
+}
+
 .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
     display: flex;
     flex-direction: column;
     margin-left: 0px;
     width: max-content;
-    &_button{
-        height: 40px;
-        font-size: 14px;
-        text-align: left;
-        &_logout{
-            height: 40px;
-            font-size: 14px;
+    background-color: white;
+
+    &_principal{
+        margin-top:150px;
+        display: flex;
+        flex-direction: column;
+        &_button{
+            padding-left: 50px;
             text-align: left;
-            color: rgb(50, 76, 224);
+            width: 300px;
+            height: 40px;
+            border: none;
+            background-color: white;
+        }
+    }
+
+    &_second{
+        margin-top: 100px;
+        &_button{
+            color: $color_blue;
+            padding-left: 50px;
+            text-align: left;
+            width: 300px;
+            height: 40px;
+            background-color: white;
+            border: none;
+        }
+    }
+
+    &_icon{
+        width: 20px;
+        padding-right: 20px;
+    }
+}
+
+.content{
+    margin-left: 300px;
+    padding-left: 150px;
+    padding-right: 150px;
+    width: 60%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $background;
+
+    &__title{
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+    &__inline{
+        display: flex;
+        align-items: baseline;
+        width: 100%;
+        justify-content: space-between;
+    }
+    &__label{
+        padding-bottom: 10px;
+        font-size: 16px;
+        color: $label_content_color;
+    }
+    &__input{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+        input{
+            height: 50px;
+            width: 345px;
+            background-color: white;
+            border: none;
+            color: $input_content_color;
+            padding: 0px 10px;
+            font-size: 14px;
+        }
+        &__select{
+            height: 50px;
+            width: 345px;
+            background-color: white;
+            border: none;
+            color: $input_content_color;
+            padding: 0px 10px;
+            font-size: 14px;
+        }
+        &__option{
+            height: 50px;
+            width: 345px;
+            background-color: white;
+            border: none;
+            color: $black;
+            padding: 0px 10px;
+            font-size: 14px;
+        }
+        
+        &__checkbox{
+            margin-bottom: 40px; 
+        }
+    }
+
+    &__checkbox{
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+
+        &__child{
+            height: 60px;
+            width: 220px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            background-color: white;
+
+            &__input{
+                width: 20px;
+                height: 20px;
+                color: $input_content_color;
+                margin-right: 20px;
+                margin-left: 30px;
+            }
+
+            &__text{
+                color: $input_content_color;
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__details{
+        font-family: "Noto Sans";
+        font-size: 18px;
+        color: #C8C8C8;
+    }
+
+    &__modeles{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+
+        &__bloc{
+            width: 200px;
+            height: 60px;
+            align-items: center;
+            font-family: 'Lato';
+            font-size: 14px;
+            color: #2F76C2;
+        }
+    }
+}
+
+.admin{
+    &__box{
+        display: flex;
+        flex-direction: row;
+    }
+    &__image{
+        img{
+            width: 35px;
+            height: 35px;
+            border-radius: 20px;
+        }
+    }
+    &__id{
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__name{
+        font-size: 14px;
+        padding: 0;
+    }
+    &__mail{
+        font-family: 'Noto Sans';
+        font-weight: lighter;
+        font-size: 10px;
+    }
+}
+
+.button{
+    &__primar{
+        background-color: #0964F5;
+        color: white;
+        height: 50px;
+        width: 230px;
+        border: none;
+        :hover{
+            height: 60px;
+            width: 240px;
+        }
+    }
+    &__second{
+        background-color: #3F5D8F;
+        color: white;
+        height: 50px;
+        width: 230px;
+        border: none;
+        :hover{
+            height: 60px;
+            width: 240px;
         }
     }
 }
