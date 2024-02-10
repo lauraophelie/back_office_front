@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import '../assets/scss/app.scss'
 import AdminBox from './AdminBox'
 import Button from './Button'
-import FiltreBox from './FiltreBox'
+//import FiltreBox from './FiltreBox'
 import TableModele from './TableModele'
 import Title from './Title'
 
@@ -34,7 +34,7 @@ function ContentListeModele(props){
                 </div>
                 <div className="box_filter">
                     <input type="text" placeholder='Recherche par marque'/>
-                    <i>Search icon</i>
+                    <img src="assets/icons/fleche-droite.png" alt="fleche" className="downarow" />
                 </div>
                 {/* <FiltreBox
                     text = "Filtrer par marque"
